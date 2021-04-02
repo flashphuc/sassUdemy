@@ -1,0 +1,30 @@
+.companies{
+    text-align: center; 
+    p{
+        color: $color-gray-4;
+    }
+    .companies__items{    
+        width: 70%;
+        margin: 0 auto;
+        img{
+            margin: 30px;
+        }
+    }
+    .companies__content{
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        .intructor{
+            grid-column: 1 / span 2;
+        }
+        .line{
+            grid-column: 3/ span 1;
+            border-right: 1px solid $color-gray-4;
+        }
+        .business{
+            grid-column: 5 / span 2;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.intro{
+    background: linear-gradient(-45deg,#EC5252 0%,#6E1A52 100%);
+    @include styleText($color-gray-5,$fs-0,$fw-bold);
+    margin-bottom: 2rem;
+    
+        .intro__content{
+            .intro__content1{
+                margin-right: 1rem;
+            }
+            p{
+                margin: 0;
+            }
+            .intro__detail{
+                margin-top: 1rem;
+            }
+            .intro__icon{
+                font-size: 47px;
+                margin-right: 5px;
+            }
+            padding: 0rem 6rem;
+            display: flex;
+            //  justify-content: space-evenly
+        }
+    .row{
+        margin: 0;
+    }
+    
+
+    
+}
+

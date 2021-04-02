@@ -1,0 +1,42 @@
+.banner{
+    background-color: #29303b;
+    .banner__plus{
+        height: 8px;
+        background: linear-gradient(-45deg,#EC5252 0%,#6E1A52 100%);
+    }   
+    .banner__row__first{
+        @include styleText($color-white-cream,$fs-3,$fw-normal);
+        margin: 2rem 0;
+        .banner__first__detail{
+            text-align: center;
+        }
+    }
+    
+     .banner__second{
+        @include styleText($color-white-cream,$fs-3,$fw-normal);
+        margin: 2rem 0;
+         text-align: center;
+         .between{
+             line-height: 7rem;
+         }
+         .banner__second__contain{
+            padding-left: 17rem;
+         }
+         .banner__title{
+             @include styleText($color-white-cream,$fs-3,$fw-bold);
+             margin: 1rem 0;
+         }
+         .banner__subtitle{
+            @include styleText($color-white-cream,$fs-1,$fw-normal);
+            margin: 1rem 0;
+         }
+     }
+    
+     .banner__third{
+        @include styleText($color-white-cream,$fs-3,$fw-normal);
+        margin: 2rem 0;
+        text-align: center;
+        padding-bottom: 3rem;
+     }
+}
+    

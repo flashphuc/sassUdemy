@@ -1,0 +1,25 @@
+.topCategories__content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 70%;
+    margin: 30px auto;
+    .topCategories__items{
+        display: inline;
+        border: 1px solid $color-gray-2;
+        padding: 13px;
+        box-shadow: 0 5px $color-gray-1;
+        transition: all .5s;
+        &:hover{
+            box-shadow:-1px 0px 5px 5px $color-gray-1;;
+        }
+    }
+    @include responsive('large'){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include responsive('medium'){
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

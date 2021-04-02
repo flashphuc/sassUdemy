@@ -1,0 +1,76 @@
+header{
+    .navbar{
+        @include styleText($color-black-light, $fs-1, $fw-normal);
+        .nav-link{
+            @include styleText($color-black-light, $fs-1, $fw-normal);
+        }
+    }
+    .navbar-toggler{
+        color: $color-gray-4;
+    }
+}
+.header__left{
+    display: flex;
+    // .navbar-toggler{
+    //     color: $color-gray-4;
+    // }
+    // flex-grow: đK LÀ CÒN CHỖ TRỐNG SẼ LẮP ĐẦY CHỖ TRỐNG CHO CÁC THẺ CON
+    // flex-grow: ;
+    justify-content: center;
+    .navbar-brand{
+        img{
+            width: 110px;
+        }
+    }
+    .header__categories{
+        margin: 0 10px;
+
+        // Canh giữa theo chính bản thân thẻ đó
+        align-self: center;
+    }
+    .header__form{
+        .input-group-text{
+            position: absolute;
+            right: 0;
+            z-index: 3;
+            @include styleButton($color-trans, $color-trans,  $border-radius, $pd-1 + 1, $pd-1 + 2);
+            @include styleText($color-red-0, 12px, $fw-bold-1);
+            &:hover{
+                @include styleHoverButton($color-red-0,$color-trans, $color-white-0);
+    }
+        }
+        flex-grow: 1;
+    }
+}
+
+//Responsive 
+.header__right{
+    .navbar-nav{
+    justify-content: space-around;
+    }
+    // 'extra-large': 1200px 
+    @include responsive('extra-large'){
+        //code sẽ được gắn vào vị trí của @content
+        .business, .teach{
+            display: none;
+        }
+    }
+
+    //768px
+    @include responsive('medium'){
+        //code sẽ được gắn vào vị trí của @content
+        .udebtn-group{
+            display: none;
+        }
+    }
+}
+
+.header__left{
+     //768px
+     @include responsive('medium'){
+        //code sẽ được gắn vào vị trí của @content
+        .header__form,.header__categories{
+            display: none;
+        }
+    }
+}

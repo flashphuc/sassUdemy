@@ -1,0 +1,35 @@
+//Helper
+@import "./Helper/variables";
+@import "./Helper/mixin";
+
+//Vị trí của Vendor phải nằm trên code chính, để nó k đè được
+// Code của thư viện
+
+//Base
+@import "./Base/reset";
+@import "./Base/customize";
+@import"./Base/normalize";
+
+//Components
+@import "./Components/button";
+
+//Layouts
+@import "./Layouts/header";
+@import"./Layouts/udemyCarousel";
+@import"./Layouts/intro";
+@import"./Layouts/courses";
+@import"./Layouts/students";
+@import"./Layouts/services";
+@import"./Layouts/banner";
+@import"./Layouts/companies";
+@import"./Layouts/feedback";
+@import"./Layouts/footer";
+@import"./Layouts/topcategories";
+
+
+//Page
+//Code riêng cho 1 trang cụ thể
+
+//Theme
+//Dark
+// @import
