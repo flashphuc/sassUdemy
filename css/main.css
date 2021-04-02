@@ -16,7 +16,8 @@ body {
   clear: both;
 }
 
-.owl-prev, .owl-next {
+.owl-prev,
+.owl-next {
   position: absolute;
   top: 33%;
   left: -3%;
@@ -29,14 +30,16 @@ body {
   z-index: 3;
 }
 
-.owl-prev span, .owl-next span {
+.owl-prev span,
+.owl-next span {
   color: #007791;
   font-size: 60px;
   font-weight: normal;
   line-height: 0.6;
 }
 
-.owl-prev:focus, .owl-next:focus {
+.owl-prev:focus,
+.owl-next:focus {
   outline: none;
 }
 
@@ -135,7 +138,8 @@ header .navbar-toggler {
 }
 
 @media screen and (max-width: 1200px) {
-  .header__right .business, .header__right .teach {
+  .header__right .business,
+  .header__right .teach {
     display: none;
   }
 }
@@ -147,13 +151,14 @@ header .navbar-toggler {
 }
 
 @media screen and (max-width: 768px) {
-  .header__left .header__form, .header__left .header__categories {
+  .header__left .header__form,
+  .header__left .header__categories {
     display: none;
   }
 }
 
 .udemyCarousel {
-  background: url(../img/cover.jpg);
+  background-image: url(../img/cover.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -210,7 +215,7 @@ header .navbar-toggler {
 }
 
 .intro {
-  background: linear-gradient(-45deg, #EC5252 0%, #6E1A52 100%);
+  background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
   color: #f7f8fa;
   font-size: 15px;
   font-weight: bold;
@@ -302,7 +307,12 @@ header .navbar-toggler {
   margin-right: 2px;
 }
 
-.course__contain .course__detail .my-tab .tab-content .rating span:nth-child(2) {
+.course__contain
+  .course__detail
+  .my-tab
+  .tab-content
+  .rating
+  span:nth-child(2) {
   color: #686f7a;
   font-size: 13px;
   font-weight: bold;
@@ -422,14 +432,22 @@ header .navbar-toggler {
   margin-right: 10px;
 }
 
-.services .services__contain .services__content .services__detail p:nth-child(1) {
+.services
+  .services__contain
+  .services__content
+  .services__detail
+  p:nth-child(1) {
   color: #29303b;
   font-size: 20px;
   font-weight: 700;
   margin: 0;
 }
 
-.services .services__contain .services__content .services__detail p:nth-child(2) {
+.services
+  .services__contain
+  .services__content
+  .services__detail
+  p:nth-child(2) {
   color: #29303b;
   font-size: 15px;
   font-weight: normal;
@@ -446,7 +464,7 @@ header .navbar-toggler {
 
 .banner .banner__plus {
   height: 8px;
-  background: linear-gradient(-45deg, #EC5252 0%, #6E1A52 100%);
+  background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
 }
 
 .banner .banner__row__first {
@@ -529,7 +547,7 @@ header .navbar-toggler {
 }
 
 .companies .companies__content .line {
-  grid-column: 3/ span 1;
+  grid-column: 3 / span 1;
   border-right: 1px solid #686f7a;
 }
 
@@ -560,7 +578,8 @@ header .navbar-toggler {
   border-radius: 50%;
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   color: blue;
 }
 
@@ -590,7 +609,7 @@ header .navbar-toggler {
 }
 
 .footer__content .footer__items1 .btn {
-  grid-row: 5/ span 1;
+  grid-row: 5 / span 1;
   background-color: white;
   color: black;
   border-color: black;
@@ -609,7 +628,7 @@ header .navbar-toggler {
   border: 1px solid #a1a7b3;
   padding: 13px;
   box-shadow: 0 5px rgba(20, 23, 28, 0.05);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .topCategories__content .topCategories__items:hover {
